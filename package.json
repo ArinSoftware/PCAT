@@ -27,6 +27,7 @@
     "prettier": "2.2.1"
   },
   "dependencies": {
+    "ejs": "^3.1.6",
     "express": "^4.17.1"
   }
 }
