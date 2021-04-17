@@ -28,6 +28,15 @@ app.get('/', async (req, res) => {
   });
 });
 
+app.get('/photos/:id', async (req, res) => {
+  //console.log(req.params.id)
+  //res.render('about');
+  const photo = await Photo.findById(req.params.id)
+  res.render('photo', {
+    photo
+  })
+});
+
 app.get('/about', (req, res) => {
   res.render('about');
 });
